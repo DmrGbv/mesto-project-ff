@@ -12,9 +12,9 @@ function createCard(card, removeCard) {
 
     cardElement.querySelector('.card__title').textContent = card.name;
 
-    const Img = cardElement.querySelector('.card__image');
-    Img.src = card.link;
-    Img.alt = card.name;
+    const cardImg = cardElement.querySelector('.card__image');
+    cardImg.src = card.link;
+    cardImg.alt = card.name;
 
     cardRemove.addEventListener('click', () => removeCard(cardElement));
 
